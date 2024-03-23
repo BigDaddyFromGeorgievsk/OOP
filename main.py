@@ -4,7 +4,7 @@ from parent_class import Vehicle
 
 class Car(Vehicle):
     def __init__(self, vehicle_type, year_of_production, seating_capacity):
-        super().__init__(vehicle_type, year_of_production, weight=0)
+        super().__init__(vehicle_type, year_of_production, fuel_consumption = 25)
         self.__seating_capacity = seating_capacity
 
     def get_rental_price(self):
@@ -13,7 +13,7 @@ class Car(Vehicle):
 
 class Motorcycle(Vehicle):
     def __init__(self, vehicle_type, year_of_production, horsepower):
-        super().__init__(vehicle_type, year_of_production, weight=0)
+        super().__init__(vehicle_type, year_of_production, fuel_consumption = 25)
         self.__horsepower = horsepower
 
     def get_rental_price(self):
