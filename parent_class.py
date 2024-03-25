@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 
 
 class Vehicle(ABC):
-	def __init__(self, vehicle_type, year_of_production):
+	def __init__(self, vehicle_type, year_of_production, fuel_consumption):
 		self.vehicle_type = vehicle_type
 		self.year_of_production = year_of_production
 		self.__fuel_consumption = fuel_consumption
